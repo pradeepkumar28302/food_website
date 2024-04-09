@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodApp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h2>FoodApp</h2>
+        <input type="search" id="search-bar" placeholder="Search Food.."/>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#contactus">Contact Us</a>
+        </nav>    
+    </header>
+    <div class="main">
+        <section id="random-meal">
+            <h3>Random Meal</h3>
+            <div id="meal-details" class="meal-grid">
+                <!-- Multiple meal items will be added dynamically here -->
+            </div>
+        </section>
+        <section id="searched-meals" style="display:none;">
+            <h3>Search Results</h3>
+            <ul id="meal-list"></ul>
+        </section>
+    </div>
+    <footer>
+        <h4>Brought to you by</h4>
+        <img src="" alt="">
+        <p>© 2024 FoodApp Inc</p>
+        <address>
+            XXX,<br>
+            YYY,<br>
+            ZZZ.
+        </address>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="script.js"></script>
+</html>
